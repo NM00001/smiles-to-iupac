@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMILES ↔ IUPAC Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SMILES ↔ IUPAC Converter</h1>
+        <p>Un outil pédagogique pour découvrir les molécules chimiques.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Conversion</h2>
+            <label for="input-type">Type d'entrée :</label>
+            <select id="input-type">
+                <option value="smiles">SMILES → IUPAC</option>
+                <option value="iupac">IUPAC → SMILES</option>
+            </select>
+            <input type="text" id="input-value" placeholder="Entrez un SMILES ou un nom IUPAC">
+            <button id="convert-btn">Convertir</button>
+            <p id="output"></p>
+        </section>
+        <section>
+            <h2>Visualisation</h2>
+            <div id="visualizer" style="width: 500px; height: 400px;"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
